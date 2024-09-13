@@ -2,6 +2,7 @@ import avatar1 from "@/assets/avatar-1.png";
 import avatar2 from "@/assets/avatar-2.png";
 import avatar3 from "@/assets/avatar-3.png";
 import avatar4 from "@/assets/avatar-4.png";
+import Image from "next/image";
 
 const testimonials = [
   {
@@ -31,5 +32,46 @@ const testimonials = [
 ];
 
 export const Testimonials = () => {
-  return <section>Testimonials</section>;
+  return (
+    <section className="py-20 md:py-24">
+      <div className="container">
+        <h2 className="text-center text-5xl font-medium tracking-tighter md:text-6xl">
+          Beyond Expectations
+        </h2>
+        <p className="mx-auto mt-5 max-w-sm text-center text-lg tracking-tight text-white/70 md:text-xl">
+          Our cutting-edge AI SEO tools have completely reshaped the strategies
+          of our clients.
+        </p>
+        <div className="mt-10 overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_20%,black_80%,transparent)]">
+          <div className="flex gap-5">
+            {testimonials.map((testimonial) => (
+              <div
+                key={testimonial.name}
+                className="max-w-xs flex-none rounded-xl border border-white/15 bg-[linear-gradient(to_bottom_left,rgb(140,69,255,.3),black)] p-6 md:max-w-md md:p-10"
+              >
+                <div className="text-lg tracking-tight md:text-2xl">
+                  {testimonial.text}
+                </div>
+                <div className="mt-5 flex items-center gap-3">
+                  <div className="relative before:absolute before:inset-0 before:z-10 before:rounded-lg before:border before:border-white/30 before:content-[''] after:absolute after:inset-0 after:bg-[rgb(140,69,255)] after:mix-blend-soft-light after:content-['']">
+                    <Image
+                      src={testimonial.avatarImg}
+                      alt={`Avatar for ${testimonial.name}`}
+                      className="h-11 w-11 rounded-lg grayscale"
+                    />
+                  </div>
+                  <div className="">
+                    <div>{testimonial.name}</div>
+                    <div className="text-sm text-white/50">
+                      {testimonial.title}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 };
