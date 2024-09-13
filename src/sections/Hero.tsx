@@ -28,8 +28,8 @@ export const Hero = () => {
           Sirius
         </h1>
         <p className="mx-auto mt-5 max-w-xl text-center text-lg text-white/70 md:text-xl">
-          Sirius is your all-in-one solution to elevate your website's
-          visibility with the power of AI. Stay optimized, stay ahead.
+          Sirius is your all-in-one solution to elevate your visibility with the
+          power of AI. Stay optimized, stay ahead.
         </p>
         <div className="mt-5 flex justify-center">
           <Button>Join Waitlist</Button>
