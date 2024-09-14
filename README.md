@@ -10,20 +10,17 @@ What stands out most about this project is the complexity of designs and animati
 
 **Addons:** Framer, Lottie.
 
-
 ## Screenshots
 
-![image](https://github.com/user-attachments/assets/7f8e8dbd-0efe-4f42-a33f-557f09ebdbf9)
+![image](https://github.com/user-attachments/assets/b039134d-1cbe-4e7f-93b2-87176a5bef16)
 
 ## Demonstration
 
-To view the project live and be impressed, click this link: https://sirius-ai-two.vercel.app
-
+To check the project live, click this link: https://sirius-ai-two.vercel.app
 
 ## Authors
 
 - [@dreyydk](https://github.com/dreyydk)
-
 
 ## Contributing
 
